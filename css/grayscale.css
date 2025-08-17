@@ -7,7 +7,45 @@
 #mainNav {
   min-height: 56px;
   background-color: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  border-radius: 0 0 1rem 1rem;
 }
+
+/* --- Navbar Görünürlük İyileştirmeleri Başlangıç --- */
+#mainNav {
+  background: rgba(255,255,255,0.97) !important;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+}
+#mainNav .navbar-brand {
+  color: #161616 !important;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(100,161,157,0.08);
+}
+/* --- Navbar Renk Kontrastı ve Görünürlük İyileştirmeleri (2025) --- */
+#mainNav .nav-link {
+  color: #111 !important; /* Daha koyu ve net renk */
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.3rem 1.7rem !important;
+  margin: 0 0.4rem;
+  border-bottom: 2.5px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s, background 0.3s;
+}
+#mainNav .nav-link:hover, #mainNav .nav-link:focus {
+  color: #009688 !important; /* Canlı ve kontrast bir teal */
+  background: rgba(0,150,136,0.10);
+  border-bottom: 2.5px solid #009688;
+}
+#mainNav .nav-link.active {
+  color: #00796b !important; /* Koyu ve kontrast bir yeşil */
+  border-bottom: 3px solid #00796b;
+  background: rgba(0,121,107,0.15);
+}
+/* --- Navbar Renk Kontrastı ve Görünürlük İyileştirmeleri Sonu --- */
 
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -86,6 +124,16 @@
   }
 }
 
+/* --- Navbar Alt Çizgi Sorunu Düzeltme (2025) --- */
+#mainNav .nav-item .nav-link.active,
+#mainNav .nav-item .nav-link:focus,
+#mainNav .nav-item .nav-link:hover {
+  border-bottom: 2.5px solid #009688 !important;
+  color: #009688 !important;
+  background: rgba(0,150,136,0.10);
+}
+/* --- Navbar Alt Çizgi Sorunu Düzeltme Sonu --- */
+
 .masthead {
   position: relative;
   width: 100%;
@@ -100,14 +148,29 @@
   background-size: cover;
 }
 
+.masthead::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit;
+  filter: blur(2px);
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.masthead > * {
+  position: relative;
+  z-index: 1;
+}
+
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: 'Montserrat', 'Varela Round', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #64a19d 0%, #467370 100%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .masthead h2 {
@@ -147,19 +210,18 @@
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+  border-radius: 2rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .btn-primary {
   background-color: #64a19d;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
   background-color: #4f837f;
-}
-
-.btn-primary:focus {
-  background-color: #4f837f;
-  color: white;
+  box-shadow: 0 8px 32px 0 rgba(100,161,157,0.18);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .btn-primary:active {
@@ -182,6 +244,9 @@
 
 .projects-section .featured-text {
   padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  background: rgba(255,255,255,0.95);
 }
 
 @media (min-width: 992px) {
@@ -194,6 +259,9 @@
 .projects-section .project-text {
   padding: 3rem;
   font-size: 90%;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  background: rgba(255,255,255,0.95);
 }
 
 @media (min-width: 992px) {
@@ -302,3 +370,28 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+/* Görsel İyileştirmeler Başlangıç */
+
+/* Navbar gölge ve kenar yuvarlama */
+/* Navbar hover animasyonu */
+#mainNav .nav-link {
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Butonlara daha fazla yuvarlaklık ve gölge */
+.btn {
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(100,161,157,0.10);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.btn-primary:hover, .btn-primary:focus {
+  box-shadow: 0 8px 32px 0 rgba(100,161,157,0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Kartlara gölge ve yuvarlak köşe */
+/* Başlıklara modern font ve gradient efekt */
+/* Arka planlara hafif bulanıklık efekti */
+/* Görsel responsive iyileştirme */
+/* --- Görsel İyileştirmeler Son --- */
