@@ -17,18 +17,61 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <!-- Language Switcher -->
+    <style>
+      .lang-switch { position: absolute; right: 30px; top: 18px; z-index: 9999; }
+      .lang-switch select { font-weight: bold; border: 1px solid #009688; border-radius: 6px; padding: 2px 10px; background: #fff; color: #009688; cursor: pointer; }
+      .lang-switch select:focus { outline: none; border-color: #00796b; }
+      .lang-tr { display: inline; }
+      .lang-en, .lang-de, .lang-fr, .lang-zh, .lang-ja { display: none; }
+    </style>
+    <script>
+      function setLang(lang) {
+        document.querySelectorAll('.lang-tr').forEach(e => e.style.display = lang === 'tr' ? 'inline' : 'none');
+        document.querySelectorAll('.lang-en').forEach(e => e.style.display = lang === 'en' ? 'inline' : 'none');
+        document.querySelectorAll('.lang-de').forEach(e => e.style.display = lang === 'de' ? 'inline' : 'none');
+        document.querySelectorAll('.lang-fr').forEach(e => e.style.display = lang === 'fr' ? 'inline' : 'none');
+        document.querySelectorAll('.lang-zh').forEach(e => e.style.display = lang === 'zh' ? 'inline' : 'none');
+        document.querySelectorAll('.lang-ja').forEach(e => e.style.display = lang === 'ja' ? 'inline' : 'none');
+      }
+      window.addEventListener('DOMContentLoaded', function() {
+        setLang('tr');
+        var select = document.getElementById('lang-select');
+        select.addEventListener('change', function() { setLang(this.value); });
+      });
+    </script>
+
   </head>
 
   <body id="page-top">
+    <!-- Language Switcher -->
+    <div class="lang-switch">
+      <select id="lang-select" aria-label="Dil seçimi">
+        <option value="tr">TR</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="fr">FR</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+      </select>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Çevik Çözüm</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span class="lang-tr">Çevik Çözüm</span>
+          <span class="lang-en">Agile Solution</span>
+          <span class="lang-de">Agile Lösung</span>
+          <span class="lang-fr">Solution Agile</span>
+          <span class="lang-zh">敏捷解决方案</span>
+          <span class="lang-ja">アジャイルソリューション</span>
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -36,13 +79,34 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Hakkımızda</a>
+              <a class="nav-link js-scroll-trigger" href="#about">
+                <span class="lang-tr">Hakkımızda</span>
+                <span class="lang-en">About</span>
+                <span class="lang-de">Über uns</span>
+                <span class="lang-fr">À propos</span>
+                <span class="lang-zh">关于我们</span>
+                <span class="lang-ja">会社概要</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projeler</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">
+                <span class="lang-tr">Projeler</span>
+                <span class="lang-en">Projects</span>
+                <span class="lang-de">Projekte</span>
+                <span class="lang-fr">Projets</span>
+                <span class="lang-zh">项目</span>
+                <span class="lang-ja">プロジェクト</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">İletişim</a>
+              <a class="nav-link js-scroll-trigger" href="#signup">
+                <span class="lang-tr">İletişim</span>
+                <span class="lang-en">Contact</span>
+                <span class="lang-de">Kontakt</span>
+                <span class="lang-fr">Contact</span>
+                <span class="lang-zh">联系我们</span>
+                <span class="lang-ja">お問い合わせ</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -53,9 +117,23 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0">ÇEVİK ÇÖZÜM</h1>
+          <h1 class="mx-auto my-0 font-montserrat">
+            <span class="lang-tr">ÇEVİK ÇÖZÜM</span>
+            <span class="lang-en">AGILE SOLUTION</span>
+            <span class="lang-de">AGILE LÖSUNG</span>
+            <span class="lang-fr">SOLUTION AGILE</span>
+            <span class="lang-zh">敏捷解决方案</span>
+            <span class="lang-ja">アジャイルソリューション</span>
+          </h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">ŞİRKET HAKKINDA DETAYLI BİLGİ</a>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">
+            <span class="lang-tr">ŞİRKET HAKKINDA DETAYLI BİLGİ</span>
+            <span class="lang-en">MORE ABOUT THE COMPANY</span>
+            <span class="lang-de">MEHR ÜBER DAS UNTERNEHMEN</span>
+            <span class="lang-fr">PLUS D'INFORMATIONS SUR L'ENTREPRISE</span>
+            <span class="lang-zh">了解公司详情</span>
+            <span class="lang-ja">会社について詳しく</span>
+          </a>
         </div>
       </div>
     </header>
@@ -65,11 +143,25 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Çevik Çözüm Size Ne Sunar</h2>
-            <p class="text-white-50">Dinamik, yaratıcı ve aktif bir çözüm ortağını olmaya hazırız. Danışmanlık hizmetleri, yazılım destek, eğitim gibi bir çok konuda size yardımıcı olmayı hedeflemekteyiz</p>
+            <h2 class="text-white mb-4">
+              <span class="lang-tr">Çevik Çözüm Size Ne Sunar</span>
+              <span class="lang-en">What Agile Solution Offers You</span>
+              <span class="lang-de">Was Agile Lösung Ihnen Bietet</span>
+              <span class="lang-fr">Ce que Solution Agile vous offre</span>
+              <span class="lang-zh">敏捷解决方案为您提供什么</span>
+              <span class="lang-ja">アジャイルソリューションのご提案</span>
+            </h2>
+            <p class="text-white-50">
+              <span class="lang-tr">Dinamik, yaratıcı ve aktif bir çözüm ortağını olmaya hazırız. Danışmanlık hizmetleri, yazılım destek, eğitim gibi bir çok konuda size yardımıcı olmayı hedeflemekteyiz</span>
+              <span class="lang-en">We are ready to be your dynamic, creative, and active solution partner. We aim to assist you in many areas such as consultancy services, software support, and training.</span>
+              <span class="lang-de">Wir sind bereit, Ihr dynamischer, kreativer und aktiver Lösungspartner zu sein. Wir bieten Unterstützung in Bereichen wie Beratung, Software-Support und Schulung.</span>
+              <span class="lang-fr">Nous sommes prêts à être votre partenaire de solution dynamique, créatif et actif. Nous visons à vous aider dans de nombreux domaines tels que le conseil, le support logiciel et la formation.</span>
+              <span class="lang-zh">我们准备成为您充满活力、富有创造力和积极主动的解决方案合作伙伴。我们致力于在咨询服务、软件支持和培训等多个领域为您提供帮助。</span>
+              <span class="lang-ja">私たちは、ダイナミックで創造的かつ積極的なソリューションパートナーになる準備ができています。コンサルティング、ソフトウェアサポート、教育など多くの分野でお手伝いします。</span>
+            </p>
           </div>
         </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
+        <img src="img/ipad.png" class="img-fluid img-responsive" alt="Tablet ile Çevik Çözüm" loading="lazy" width="600" height="400">
       </div>
     </section>
 
@@ -94,14 +186,28 @@
 
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+            <img class="img-fluid" src="img/demo-image-02.jpg" alt="" loading="lazy" width="600" height="400">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Danışmanlık</h4>
-                  <p class="mb-0 text-white-50">Yazılım konusunda danışmanlık hizmeti sağlamaktayız.</p>
+                  <h4 class="text-white">
+                    <span class="lang-tr">Danışmanlık</span>
+                    <span class="lang-en">Consultancy</span>
+                    <span class="lang-de">Beratung</span>
+                    <span class="lang-fr">Conseil</span>
+                    <span class="lang-zh">咨询</span>
+                    <span class="lang-ja">コンサルティング</span>
+                  </h4>
+                  <p class="mb-0 text-white-50">
+                    <span class="lang-tr">Yazılım konusunda danışmanlık hizmeti sağlamaktayız.</span>
+                    <span class="lang-en">We provide consultancy services in software.</span>
+                    <span class="lang-de">Wir bieten Beratungsdienstleistungen im Bereich Software an.</span>
+                    <span class="lang-fr">Nous fournissons des services de conseil en logiciel.</span>
+                    <span class="lang-zh">我们提供软件方面的咨询服务。</span>
+                    <span class="lang-ja">ソフトウェアに関するコンサルティングサービスを提供しています。</span>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -114,14 +220,28 @@
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+            <img class="img-fluid" src="img/demo-image-01.jpg" alt="" loading="lazy" width="600" height="400">
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Mimari Danışmanlık</h4>
-                  <p class="mb-0 text-white-50">Yazılım ihtiyaçlarında şu çıkmış şunu uyarlayalım şeklinde değil sizin için en uygun, en güncel, genişliyebilir ve bakım maliyetlerin az olduğu çözümler sunmaktayız</p>
+                  <h4 class="text-white">
+                    <span class="lang-tr">Mimari Danışmanlık</span>
+                    <span class="lang-en">Architectural Consultancy</span>
+                    <span class="lang-de">Architekturberatung</span>
+                    <span class="lang-fr">Conseil en architecture</span>
+                    <span class="lang-zh">架构咨询</span>
+                    <span class="lang-ja">アーキテクチャコンサルティング</span>
+                  </h4>
+                  <p class="mb-0 text-white-50">
+                    <span class="lang-tr">Yazılım ihtiyaçlarında şu çıkmış şunu uyarlayalım şeklinde değil sizin için en uygun, en güncel, genişliyebilir ve bakım maliyetlerin az olduğu çözümler sunmaktayız</span>
+                    <span class="lang-en">Instead of adapting outdated solutions, we offer you the most suitable, up-to-date, scalable, and low-maintenance solutions for your software needs.</span>
+                    <span class="lang-de">Wir bieten Ihnen die passendsten, aktuellsten, skalierbaren und wartungsarmen Lösungen für Ihre Softwarebedürfnisse, anstatt veraltete Lösungen anzupassen.</span>
+                    <span class="lang-fr">Nous vous proposons les solutions les plus adaptées, les plus récentes, évolutives et à faible maintenance pour vos besoins logiciels, au lieu d'adapter des solutions obsolètes.</span>
+                    <span class="lang-zh">我们为您的软件需求提供最合适、最新、可扩展且维护成本低的解决方案，而不是采用过时的方案。</span>
+                    <span class="lang-ja">時代遅れのソリューションを適用するのではなく、お客様のニーズに最適で最新、拡張性があり、保守コストの低いソリューションを提供します。</span>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -132,14 +252,28 @@
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/teacher.jpg" alt="">
+            <img class="img-fluid" src="img/teacher.jpg" alt="" loading="lazy" width="600" height="400">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Eğitim</h4>
-                  <p class="mb-0 text-white-50">www.uzaktanokul.com  ve www.cocuklaricinbilisim.com ile size eğitim konusunda destek vermekteyiz.</p>
+                  <h4 class="text-white">
+                    <span class="lang-tr">Eğitim</span>
+                    <span class="lang-en">Education</span>
+                    <span class="lang-de">Bildung</span>
+                    <span class="lang-fr">Éducation</span>
+                    <span class="lang-zh">教育</span>
+                    <span class="lang-ja">教育</span>
+                  </h4>
+                  <p class="mb-0 text-white-50">
+                    <span class="lang-tr">www.uzaktanokul.com  ve www.cocuklaricinbilisim.com ile size eğitim konusunda destek vermekteyiz.</span>
+                    <span class="lang-en">We support you in education with www.uzaktanokul.com and www.cocuklaricinbilisim.com.</span>
+                    <span class="lang-de">Wir unterstützen Sie im Bildungsbereich mit www.uzaktanokul.com und www.cocuklaricinbilisim.com.</span>
+                    <span class="lang-fr">Nous vous accompagnons dans l'éducation avec www.uzaktanokul.com et www.cocuklaricinbilisim.com.</span>
+                    <span class="lang-zh">我们通过 www.uzaktanokul.com 和 www.cocuklaricinbilisim.com 为您提供教育支持。</span>
+                    <span class="lang-ja">www.uzaktanokul.com および www.cocuklaricinbilisim.com を通じて教育面でサポートします。</span>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -181,9 +315,23 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Adres</h4>
+                <h4 class="text-uppercase m-0">
+                  <span class="lang-tr">Adres</span>
+                  <span class="lang-en">Address</span>
+                  <span class="lang-de">Adresse</span>
+                  <span class="lang-fr">Adresse</span>
+                  <span class="lang-zh">地址</span>
+                  <span class="lang-ja">住所</span>
+                </h4>
                 <hr class="my-4">
-                <div class="small text-black-50">Mod İstanbul Kağıthane/İstanbul</div>
+                <div class="small text-black-50">
+                  <span class="lang-tr">Mod İstanbul Kağıthane/İstanbul</span>
+                  <span class="lang-en">Mod Istanbul Kağıthane/Istanbul</span>
+                  <span class="lang-de">Mod Istanbul Kağıthane/Istanbul</span>
+                  <span class="lang-fr">Mod Istanbul Kağıthane/Istanbul</span>
+                  <span class="lang-zh">Mod Istanbul Kağıthane/Istanbul</span>
+                  <span class="lang-ja">Mod Istanbul Kağıthane/Istanbul</span>
+                </div>
               </div>
             </div>
           </div>
@@ -205,9 +353,18 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Sosyal Medya</h4>
+                <h4 class="text-uppercase m-0">
+                  <span class="lang-tr">Sosyal Medya</span>
+                  <span class="lang-en">Social Media</span>
+                  <span class="lang-de">Soziale Medien</span>
+                  <span class="lang-fr">Réseaux sociaux</span>
+                  <span class="lang-zh">社交媒体</span>
+                  <span class="lang-ja">ソーシャルメディア</span>
+                </h4>
                 <hr class="my-4">
-                <div class="small text-black-50"><a href="https://www.linkedin.com/company/cevikcozum">Linkedin</a></div>
+                <div class="small text-black-50">
+                  <a href="https://www.linkedin.com/company/cevikcozum">Linkedin</a>
+                </div>
               </div>
             </div>
           </div>
@@ -231,7 +388,12 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
-        Copyright &copy; Çevik Çözüm 2019
+        <span class="lang-tr">Copyright &copy; Çevik Çözüm 2019</span>
+        <span class="lang-en">Copyright &copy; Agile Solution 2019</span>
+        <span class="lang-de">Copyright &copy; Agile Lösung 2019</span>
+        <span class="lang-fr">Copyright &copy; Solution Agile 2019</span>
+        <span class="lang-zh">版权所有 &copy; 敏捷解决方案 2019</span>
+        <span class="lang-ja">Copyright &copy; アジャイルソリューション 2019</span>
       </div>
     </footer>
 
