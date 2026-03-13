@@ -411,7 +411,7 @@ footer {
 
 /* Scroll Down İkonu Stilleri */
 .scroll-down-icon {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease;
   display: inline-block;
