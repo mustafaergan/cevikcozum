@@ -5,7 +5,7 @@
 ## ✨ Özellikler
 
 - **Agile Süreç Yönetimi:** Scrum ve Kanban gibi metodolojilerle tam uyumlu yapı.
-- **Hızlı Geliştirme:** Gulp ve SCSS tabanlı modern geliştirme ortamı.
+- **Hızlı Geliştirme:** SCSS tabanlı modern ve modüler tasarım.
 - **Dinamik İçerik:** JavaScript ve CSS bileşenleri ile zengin kullanıcı deneyimi.
 - **Responsive Tasarım:** Mobil ve masaüstü cihazlarla tam uyumlu arayüz.
 
@@ -13,34 +13,22 @@
 
 - **Frontend:** HTML5, CSS3, SCSS
 - **JS Kütüphaneleri:** Vendor klasörü altındaki bağımlılıklar
-- **Otomasyon:** Gulp.js (gulpfile.js üzerinden iş akışı yönetimi)
+- **Otomasyon:** Gulp.js (Geliştirme süreci için tercih edilebilir)
 - **CI/CD:** Travis CI entegrasyonu (.travis.yml)
 
-## 📦 Kurulum ve Çalıştırma
+## 📦 Kurulum ve Kullanım
 
-### Gereksinimler
-- Node.js (v14 veya üzeri)
-- npm (veya yarn)
+Bu uygulama **statik bir JavaScript uygulamasıdır**, bu nedenle herhangi bir sunucu taraflı kurulum gerektirmez.
 
-### Adımlar
-
-1. **Projeyi klonlayın:**
+1. **Projeyi indirin veya klonlayın:**
    ```bash
    git clone https://github.com/mustafaergan/cevikcozum.git
    cd cevikcozum
    ```
 
-2. **Bağımlılıkları yükleyin:**
-   ```bash
-   npm install
-   ```
-
-3. **Geliştirme modunda çalıştırın:**
-   ```bash
-   npm start
-   # veya gulp kullanıyorsanız
-   gulp
-   ```
+2. **Çalıştırın:**
+   - Proje klasöründeki `index.html` dosyasını herhangi bir web tarayıcısı ile açmanız yeterlidir.
+   - Veya yerel bir geliştirme sunucusu (Live Server vb.) üzerinden görüntüleyebilirsiniz.
 
 ## 📂 Proje Yapısı
 
