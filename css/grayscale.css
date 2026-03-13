@@ -398,3 +398,13 @@ footer {
 /* Arka planlara hafif bulanıklık efekti */
 /* Görsel responsive iyileştirme */
 /* --- Görsel İyileştirmeler Son --- */
+
+/* Özel buton animasyonu */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-5px);}
+  60% {transform: translateY(-3px);}
+}
+.masthead .btn-primary i {
+  animation: bounce 2s infinite;
+}
