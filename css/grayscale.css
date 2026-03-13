@@ -25,6 +25,7 @@
 }
 /* --- Navbar Renk Kontrastı ve Görünürlük İyileştirmeleri (2025) --- */
 #mainNav .nav-link {
+    font-weight: 500;
   color: #111 !important; /* Daha koyu ve net renk */
   font-weight: 800;
   font-size: 1.25rem;
@@ -86,13 +87,14 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
   }
   #mainNav .nav-link {
+    font-weight: 500;
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
   }
   #mainNav .nav-link:hover {
     color: #fff;
@@ -334,7 +336,7 @@
 }
 
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .contact-section .social a:active {
@@ -376,6 +378,7 @@ footer {
 /* Navbar gölge ve kenar yuvarlama */
 /* Navbar hover animasyonu */
 #mainNav .nav-link {
+    font-weight: 500;
   transition: color 0.3s, border-bottom 0.3s;
 }
 
