@@ -61,12 +61,14 @@
         {code:'ja', flag:'🇯🇵', label:'日本語'}
       ];
       function setLang(lang) {
-        document.querySelectorAll('.lang-tr').forEach(e => e.style.display = lang === 'tr' ? 'inline' : 'none');
-        document.querySelectorAll('.lang-en').forEach(e => e.style.display = lang === 'en' ? 'inline' : 'none');
-        document.querySelectorAll('.lang-de').forEach(e => e.style.display = lang === 'de' ? 'inline' : 'none');
-        document.querySelectorAll('.lang-fr').forEach(e => e.style.display = lang === 'fr' ? 'inline' : 'none');
-        document.querySelectorAll('.lang-zh').forEach(e => e.style.display = lang === 'zh' ? 'inline' : 'none');
-        document.querySelectorAll('.lang-ja').forEach(e => e.style.display = lang === 'ja' ? 'inline' : 'none');
+        // Tüm dilleri gizle
+        const languages = ['tr', 'en', 'de', 'fr', 'zh', 'ja'];
+        languages.forEach(l => {
+          document.querySelectorAll('.lang-' + l).forEach(e => {
+            e.style.setProperty('display', l === lang ? 'inline' : 'none', 'important');
+          });
+        });
+
         document.documentElement.setAttribute('lang', langCodesMap[lang] || 'tr');
         updateLangButton(lang);
         highlightActive(lang);
