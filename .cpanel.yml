@@ -5,5 +5,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/u1969788/public_html/
-    - /bin/cp -R index.html css js img logo vendor _deploy $DEPLOYPATH
+    - /bin/cp -R index.html robots.txt sitemap.xml assets logo _deploy $DEPLOYPATH
     - /bin/sh ops/write-status.sh $DEPLOYPATH

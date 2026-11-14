@@ -1,560 +1,227 @@
 <!DOCTYPE html>
 <html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Çevik Çözüm — Yazılım ve Bilişimde Çevik Çözümler</title>
+  <meta name="description" content="Çevik Çözüm: Yazılım geliştirme, Scrum, Agile metodolojileri, mimari danışmanlık ve eğitim alanlarında İstanbul merkezli bilişim çözüm ortağı.">
+  <meta name="keywords" content="yazılım, bilişim, çevik çözüm, scrum, agile, yazılım eğitimi, dijital dönüşüm, istanbul yazılım, yazılım mimarisi">
+  <meta name="theme-color" content="#05070f">
+  <link rel="canonical" href="https://cevikcozum.com/">
+  <link rel="icon" type="image/svg+xml" href="logo/vector/default.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/default.png">
+  <link rel="apple-touch-icon" href="logo/default.png">
 
-  <head>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cevikcozum.com/">
+  <meta property="og:title" content="Çevik Çözüm — Yazılım ve Bilişimde Çevik Çözümler">
+  <meta property="og:description" content="Danışmanlık, mimari danışmanlık ve eğitim. Agile ve Scrum ile sürdürülebilir yazılım geliştirme.">
+  <meta property="og:image" content="https://cevikcozum.com/logo/cover.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Çevik Çözüm: Yazılım geliştirme, Scrum, Agile metodolojileri ve bilişim çözümleri üzerine uzmanlaşmış profesyonel hizmetler.">
-    <meta name="author" content="">
-    <meta name="keywords" content="yazılım, bilişim, çevik çözüm, scrum, agile, yazılım eğitimi, dijital dönüşüm, istanbul yazılım">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css?v=2">
 
-    <title>Çevik Çözüm</title>
-    <!-- Favicon Başlangıç -->
-    <link rel="icon" type="image/svg+xml" href="logo/vector/default.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo/default.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo/default.png">
-    <link rel="apple-touch-icon" href="logo/default.png">
-    <meta name="theme-color" content="#009688">
-    <!-- Favicon Bitiş -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Çevik Çözüm",
+    "alternateName": "Agile Solution",
+    "url": "https://cevikcozum.com/",
+    "logo": "https://cevikcozum.com/logo/default.png",
+    "email": "info@cevikcozum.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Beyoğlu", "addressRegion": "İstanbul", "streetAddress": "Sütlüce", "addressCountry": "TR" },
+    "sameAs": ["https://www.linkedin.com/company/cevikcozum"],
+    "knowsAbout": ["Yazılım geliştirme", "Agile", "Scrum", "Yazılım mimarisi", "Dijital dönüşüm"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-    <!-- Language Switcher -->
-    <style>
-      /* Dil seçici: select kaldırıldı, custom dropdown eklendi */
-      .language-dropdown { position:relative; display:flex; align-items:center; margin-left:1rem; }
-      .language-dropdown button { display:flex; align-items:center; gap:.4rem; font-weight:600; border:1px solid #009688; background:#fff; color:#009688; border-radius:4px; padding:4px 10px; cursor:pointer; font-size:.85rem; line-height:1; }
-      .language-dropdown button:focus { outline:none; border-color:#00796b; box-shadow:0 0 0 2px rgba(0,150,136,.15); }
-      .language-options { list-style:none; margin:4px 0 0; padding:4px 0; position:absolute; top:100%; right:0; min-width:150px; background:#fff; border:1px solid #009688; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,.12); z-index:1200; max-height:260px; overflow:auto; display:none; }
-      .language-dropdown.open .language-options { display:block; }
-      .language-options li { padding:6px 12px; font-size:.85rem; display:flex; align-items:center; gap:.5rem; cursor:pointer; color:#155e5b; }
-      .language-options li:hover, .language-options li:focus { background:#e0f4f2; outline:none; }
-      .language-options li[aria-selected='true'] { background:#009688; color:#fff; }
-      .language-flag { font-size:1rem; line-height:1; }
-      .lang-tr { display:inline; }
-      .lang-en, .lang-de, .lang-fr, .lang-zh, .lang-ja { display:none; }
-      @media (max-width: 991.98px) {
-        .language-dropdown { width:100%; justify-content:flex-start; margin:0.75rem 0 0; }
-        .language-dropdown button { width:100%; justify-content:space-between; }
-        .language-options { right:auto; left:0; min-width:100%; }
-      }
-    </style>
-    <script>
-      const langCodesMap = { tr:'tr', en:'en', de:'de', fr:'fr', zh:'zh', ja:'ja' };
-      const LANG_ITEMS = [
-        {code:'tr', flag:'🇹🇷', label:'TR'},
-        {code:'en', flag:'🇬🇧', label:'EN'},
-        {code:'de', flag:'🇩🇪', label:'DE'},
-        {code:'fr', flag:'🇫🇷', label:'FR'},
-        {code:'zh', flag:'🇨🇳', label:'中文'},
-        {code:'ja', flag:'🇯🇵', label:'日本語'}
-      ];
-      function setLang(lang) {
-        // Tüm dilleri gizle
-        const languages = ['tr', 'en', 'de', 'fr', 'zh', 'ja'];
-        languages.forEach(l => {
-          document.querySelectorAll('.lang-' + l).forEach(e => {
-            e.style.setProperty('display', l === lang ? 'inline' : 'none', 'important');
-          });
-        });
-
-        document.documentElement.setAttribute('lang', langCodesMap[lang] || 'tr');
-        updateLangButton(lang);
-        highlightActive(lang);
-      }
-      function updateLangButton(lang){
-        const btn = document.getElementById('lang-toggle');
-        if(!btn) return;
-        const item = LANG_ITEMS.find(l=>l.code===lang) || LANG_ITEMS[0];
-        btn.innerHTML = `<span class="language-flag">${item.flag}</span> <span>${item.label}</span>`;
-        btn.setAttribute('aria-label', 'Dil: '+ item.label);
-      }
-      function highlightActive(lang){
-        document.querySelectorAll('#lang-options li').forEach(li=>{
-          li.setAttribute('aria-selected', li.dataset.lang===lang ? 'true':'false');
-        });
-      }
-      function toggleDropdown(open){
-        const wrap = document.querySelector('.language-dropdown');
-        if(!wrap) return;
-        const isOpen = open!==undefined ? open : !wrap.classList.contains('open');
-        wrap.classList.toggle('open', isOpen);
-        const btn = document.getElementById('lang-toggle');
-        btn.setAttribute('aria-expanded', isOpen ? 'true':'false');
-        if(isOpen){
-          const current = wrap.querySelector('#lang-options li[aria-selected="true"]') || wrap.querySelector('#lang-options li');
-            current && current.focus();
-        } else {
-          btn.focus();
-        }
-      }
-      function initLanguageDropdown(){
-        const container = document.getElementById('language-dropdown-mount');
-        if(!container) return;
-        container.innerHTML = `<div class="language-dropdown"><button id="lang-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"></button><ul id="lang-options" class="language-options" role="listbox"></ul></div>`;
-        const list = document.getElementById('lang-options');
-        LANG_ITEMS.forEach(item=>{
-          const li = document.createElement('li');
-          li.tabIndex = 0;
-            li.dataset.lang = item.code;
-            li.role = 'option';
-            li.innerHTML = `<span class="language-flag">${item.flag}</span> <span>${item.label}</span>`;
-            li.addEventListener('click', ()=> selectLanguage(item.code));
-            li.addEventListener('keydown', e=>{
-              if(e.key==='Enter' || e.key===' '){ e.preventDefault(); selectLanguage(item.code); }
-            });
-            list.appendChild(li);
-        });
-        document.getElementById('lang-toggle').addEventListener('click', ()=> toggleDropdown());
-        document.addEventListener('click', (e)=>{
-          const wrap = document.querySelector('.language-dropdown');
-          if(!wrap) return;
-          if(!wrap.contains(e.target)) toggleDropdown(false);
-        });
-        document.addEventListener('keydown', (e)=>{
-          if(e.key==='Escape') toggleDropdown(false);
-          if(!document.querySelector('.language-dropdown.open')) return;
-          const items = Array.from(document.querySelectorAll('#lang-options li'));
-          const active = document.activeElement;
-          const idx = items.indexOf(active);
-          if(e.key==='ArrowDown'){ e.preventDefault(); items[(idx+1)%items.length].focus(); }
-          if(e.key==='ArrowUp'){ e.preventDefault(); items[(idx-1+items.length)%items.length].focus(); }
-        });
-      }
-      function selectLanguage(code){
-        localStorage.setItem('ui-lang', code);
-        setLang(code);
-        toggleDropdown(false);
-      }
-      window.addEventListener('DOMContentLoaded', function() {
-        initLanguageDropdown();
-        const saved = localStorage.getItem('ui-lang') || 'tr';
-        setLang(saved);
-      });
-    </script>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav role="navigation" aria-label="Ana Menü" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <!-- ...existing brand & toggler ... -->
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <span class="lang-tr">Çevik Çözüm</span>
-          <span class="lang-en">Agile Solution</span>
-          <span class="lang-de">Agile Lösung</span>
-          <span class="lang-fr">Solution Agile</span>
-          <span class="lang-zh">敏捷解决方案</span>
-          <span class="lang-ja">アジャイルソリューション</span>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <!-- ...existing nav items ... -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">
-                <span class="lang-tr">Hakkımızda</span>
-                <span class="lang-en">About</span>
-                <span class="lang-de">Über uns</span>
-                <span class="lang-fr">À propos</span>
-                <span class="lang-zh">关于我们</span>
-                <span class="lang-ja">会社概要</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">
-                <span class="lang-tr">Projeler</span>
-                <span class="lang-en">Projects</span>
-                <span class="lang-de">Projekte</span>
-                <span class="lang-fr">Projets</span>
-                <span class="lang-zh">项目</span>
-                <span class="lang-ja">プロジェクト</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">
-                <span class="lang-tr">İletişim</span>
-                <span class="lang-en">Contact</span>
-                <span class="lang-de">Kontakt</span>
-                <span class="lang-fr">Contact</span>
-                <span class="lang-zh">联系我们</span>
-                <span class="lang-ja">お問い合わせ</span>
-              </a>
-            </li>
-          </ul>
-          <!-- Yeni bayrak dropdown mount noktası -->
-          <div id="language-dropdown-mount" class="ml-lg-2 mt-2 mt-lg-0"></div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header role="banner" class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 font-montserrat">
-            <span class="lang-tr">ÇEVİK ÇÖZÜM</span>
-            <span class="lang-en">AGILE SOLUTION</span>
-            <span class="lang-de">AGILE LÖSUNG</span>
-            <span class="lang-fr">SOLUTION AGILE</span>
-            <span class="lang-zh">敏捷解决方案</span>
-            <span class="lang-ja">アジャイルソリューション</span>
-          </h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
-          <a href="#about" class="js-scroll-trigger scroll-down-icon" style="font-size: 3rem !important; display: inline-block !important;" aria-label="Aşağı Kaydır"><i class="fas fa-angle-double-down"></i></a>
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" role="region" aria-label="Hakkımızda" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="lang-tr">Çevik Çözüm Size Ne Sunar</span>
-              <span class="lang-en">What Agile Solution Offers You</span>
-              <span class="lang-de">Was Agile Lösung Ihnen Bietet</span>
-              <span class="lang-fr">Ce que Solution Agile vous offre</span>
-              <span class="lang-zh">敏捷解决方案为您提供什么</span>
-              <span class="lang-ja">アジャイルソリューションのご提案</span>
-            </h2>
-            <p class="text-white-50">
-              <span class="lang-tr">İş süreçlerinizi modernize eden, çevik metodolojilerle verimliliği artıran ve teknolojik dönüşümünüze yön veren dinamik bir çözüm ortağıyız. Danışmanlık, özel yazılım çözümleri ve stratejik eğitimlerle işinizi geleceğe taşımayı hedefliyoruz.</span>
-              <span class="lang-en">We are ready to be your dynamic, creative, and active solution partner. We aim to assist you in many areas such as consultancy services, software support, and training.</span>
-              <span class="lang-de">Wir sind bereit, Ihr dynamischer, kreativer und aktiver Lösungspartner zu sein. Wir bieten Unterstützung in Bereichen wie Beratung, Software-Support und Schulung.</span>
-              <span class="lang-fr">Nous sommes prêts à être votre partenaire de solution dynamique, créatif et actif. Nous visons à vous aider dans de nombreux domaines tels que le conseil, le support logiciel et la formation.</span>
-              <span class="lang-zh">我们准备成为您充满活力、富有创造力和积极主动的解决方案合作伙伴。我们致力于在咨询服务、软件支持和培训等多个领域为您提供帮助。</span>
-              <span class="lang-ja">私たちは、ダイナミックで創造的かつ積極的なソリューションパートナーになる準備ができています。コンサルティング、ソフトウェアサポート、教育など多くの分野でお手伝いします。</span>
-            </p>
-          </div>
-        </div>
-        <img src="img/ipad.png" class="img-fluid img-responsive" alt="Ekranda Çevik Çözüm uygulamasının açık olduğu bir tablet cihazı" aria-label="Tablet üzerinde uygulama arayüzü gösterimi" loading="lazy" width="600" height="400">
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" role="region" aria-label="Projelerimiz" class="projects-section bg-light">
-      <div class="container">
-
-        <!-- Featured Project Row 
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <picture><source srcset="img/bg-masthead-ultra.jpg" media="(max-width: 800px)"><source srcset="img/bg-masthead-medium.jpg" media="(max-width: 1200px)"><img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead-lite.jpg" alt="" loading="lazy"></picture>
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Danışmanlık</h4>
-              <p class="text-black-50 mb-0">Yazılım konusunda her türlü danışmanlık hizmeti sağlamaktayız.</p>
-            </div>
-          </div>
-        </div>
-		
-		-->
-
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="" loading="lazy" width="600" height="400">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">
-                    <span class="lang-tr">Danışmanlık</span>
-                    <span class="lang-en">Consultancy</span>
-                    <span class="lang-de">Beratung</span>
-                    <span class="lang-fr">Conseil</span>
-                    <span class="lang-zh">咨询</span>
-                    <span class="lang-ja">コンサルティング</span>
-                  </h4>
-                  <p class="mb-0 text-white-50">
-                    <span class="lang-tr">Dijital dönüşüm stratejilerinden teknoloji seçimlerine kadar, yazılım yaşam döngüsünün her aşamasında veriye dayalı ve sonuç odaklı danışmanlık sunuyoruz. Ekiplerinizin teknik kapasitesini artırmak ve projelerinizi başarıya ulaştırmak için yanınızdayız..</span>
-                    <span class="lang-en">We provide consultancy services in software.</span>
-                    <span class="lang-de">Wir bieten Beratungsdienstleistungen im Bereich Software an.</span>
-                    <span class="lang-fr">Nous fournissons des services de conseil en logiciel.</span>
-                    <span class="lang-zh">我们提供软件方面的咨询服务。</span>
-                    <span class="lang-ja">ソフトウェアに関するコンサルティングサービスを提供しています。</span>
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-		
-		
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="" loading="lazy" width="600" height="400">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">
-                    <span class="lang-tr">Mimari Danışmanlık</span>
-                    <span class="lang-en">Architectural Consultancy</span>
-                    <span class="lang-de">Architekturberatung</span>
-                    <span class="lang-fr">Conseil en architecture</span>
-                    <span class="lang-zh">架构咨询</span>
-                    <span class="lang-ja">アーキテクチャコンサルティング</span>
-                  </h4>
-                  <p class="mb-0 text-white-50">
-                    <span class="lang-tr">Yazılım mimarisi süreçlerinde geçici trendlere kapılmak yerine; sürdürülebilir, ölçeklenebilir ve operasyonel maliyetleri minimize eden stratejik çözümler inşa ediyoruz. İşinize en uygun teknoloji yığınını belirleyerek, geleceğin ihtiyaçlarına bugünden hazır bir altyapı sunuyoruz.</span>
-                    <span class="lang-en">Instead of adapting outdated solutions, we offer you the most suitable, up-to-date, scalable, and low-maintenance solutions for your software needs.</span>
-                    <span class="lang-de">Wir bieten Ihnen die passendsten, aktuellsten, skalierbaren und wartungsarmen Lösungen für Ihre Softwarebedürfnisse, anstatt veraltete Lösungen anzupassen.</span>
-                    <span class="lang-fr">Nous vous proposons les solutions les plus adaptées, les plus récentes, évolutives et à faible maintenance pour vos besoins logiciels, au lieu d'adapter des solutions obsolètes.</span>
-                    <span class="lang-zh">我们为您的软件需求提供最合适、最新、可扩展且维护成本低的解决方案，而不是采用过时的方案。</span>
-                    <span class="lang-ja">時代遅れのソリューションを適用するのではなく、お客様のニーズに最適で最新、拡張性があり、保守コストの低いソリューションを提供します。</span>
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/teacher.jpg" alt="" loading="lazy" width="600" height="400">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">
-                    <span class="lang-tr">Eğitim</span>
-                    <span class="lang-en">Education</span>
-                    <span class="lang-de">Bildung</span>
-                    <span class="lang-fr">Éducation</span>
-                    <span class="lang-zh">教育</span>
-                    <span class="lang-ja">教育</span>
-                  </h4>
-                  <p class="mb-0 text-white-50">
-                    <span class="lang-tr">Yazılım geliştirme süreçleri ve çevik metodolojiler üzerine kapsamlı eğitim çözümleri sunuyoruz.</span>
-                    <span class="lang-en">We provide comprehensive training solutions on software development processes and agile methodologies.</span>
-                    <span class="lang-de">Wir unterstützen Sie im Bildungsbereich mit www.uzaktanokul.com und www.cocuklaricinbilisim.com.</span>
-                    <span class="lang-fr">Nous vous accompagnons dans l'éducation avec www.uzaktanokul.com et www.cocuklaricinbilisim.com.</span>
-                    <span class="lang-zh">我们通过 www.uzaktanokul.com 和 www.cocuklaricinbilisim.com 为您提供教育支持。</span>
-                    <span class="lang-ja">www.uzaktanokul.com および www.cocuklaricinbilisim.com を通じて教育面でサポートします。</span>
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Signup Section 
-<section class="seo-section bg-light py-5"><div class="container text-center"><div class="row"><div class="col-lg-8 mx-auto"><h2 class="text-dark mb-4">Yazılım ve Bilişimde Çevik Çözümler</h2><p class="text-muted lead">Modern yazılım dünyasında rekabetçi kalmak için <strong>Agile</strong> ve <strong>Scrum</strong> metodolojilerini iş süreçlerimize entegre ediyoruz. <strong>Çevik Çözüm</strong> olarak, bilişim sektöründeki derin tecrübemizle ekiplerin verimliliğini artıran, sürdürülebilir ve esnek yazılım geliştirme stratejileri sunuyoruz. İstanbul merkezli ekibimizle, dijital dönüşüm yolculuğunuzda size rehberlik ediyoruz.</p><div class="seo-keywords mt-3"><span class="badge badge-secondary m-1">Yazılım Geliştirme</span><span class="badge badge-secondary m-1">Agile Metodolojileri</span><span class="badge badge-secondary m-1">Scrum Master</span><span class="badge badge-secondary m-1">Bilişim Danışmanlığı</span><span class="badge badge-secondary m-1">Dijital Dönüşüm</span></div></div></div></div></section>
-    <section id="signup" role="region" aria-label="Bültene Kayıt" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-	
-	-->
-
-    <!-- Contact Section -->
-<section class="seo-section bg-light py-5">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2 class="text-dark mb-4">
-          <span class="lang-tr">Yazılım ve Bilişimde Çevik Çözümler</span>
-          <span class="lang-en">Agile Solutions in Software and IT</span>
-          <span class="lang-de">Agile Lösungen in Software und IT</span>
-          <span class="lang-fr">Solutions Agiles en Logiciel et IT</span>
-          <span class="lang-zh">软件和信息技术领域的敏捷解决方案</span>
-          <span class="lang-ja">ソフトウェアとITにおけるアジャイルソリューション</span>
-        </h2>
-        <p class="text-muted lead">
-          <span class="lang-tr">Modern yazılım dünyasında rekabetçi kalmak için <strong>Agile</strong> ve <strong>Scrum</strong> metodolojilerini iş süreçlerimize entegre ediyoruz. <strong>Çevik Çözüm</strong> olarak, bilişim sektöründeki derin tecrübemizle ekiplerin verimliliğini artıran, sürdürülebilir ve esnek yazılım geliştirme stratejileri sunuyoruz. İstanbul merkezli ekibimizle, dijital dönüşüm yolculuğunuzda size rehberlik ediyoruz.</span>
-          <span class="lang-en">We integrate <strong>Agile</strong> and <strong>Scrum</strong> methodologies into our business processes to stay competitive in the modern software world. As <strong>Agile Solution</strong>, we offer sustainable and flexible software development strategies that increase the efficiency of teams with our deep experience in the IT sector. We guide you in your digital transformation journey with our Istanbul-based team.</span>
-          <span class="lang-de">Wir integrieren <strong>Agile</strong>- und <strong>Scrum</strong>-Methoden in unsere Geschäftsprozesse, um in der modernen Softwarewelt wettbewerbsfähig zu bleiben. Als <strong>Agile Lösung</strong> bieten wir nachhaltige und flexible Softwareentwicklungsstrategien, die die Effizienz von Teams steigern. Mit unserem Team in Istanbul begleiten wir Sie auf Ihrer digitalen Transformationsreise.</span>
-          <span class="lang-fr">Nous intégrons les méthodologies <strong>Agile</strong> et <strong>Scrum</strong> dans nos processus métier pour rester compétitifs dans le monde moderne du logiciel. En tant que <strong>Solution Agile</strong>, nous proposons des stratégies de développement de logiciels durables et flexibles qui augmentent l'efficacité des équipes. Nous vous accompagnons dans votre voyage de transformation numérique avec notre équipe basée à Istanbul.</span>
-          <span class="lang-zh">我们将 <strong>敏捷 (Agile)</strong> 和 <strong>Scrum</strong> 方法集成到我们的业务流程中，以在现代软件世界中保持竞争力。作为 <strong>敏捷解决方案</strong>，我们凭借在 IT 领域的深厚经验，提供可持续且灵活的软件开发策略，提高团队效率。我们位于伊斯坦布尔的团队将引导您完成数字化转型之旅。</span>
-          <span class="lang-ja">現代のソフトウェア業界で競争力を維持するために、<strong>アジャイル</strong>および<strong>スクラム</strong>手法をビジネスプロセスに統合しています。<strong>アジャイルソリューション</strong>として、ITセクターにおける深い経験を活かし、チームの効率を高める持続可能で柔軟なソフトウェア開発戦略を提供します。イスタンブールを拠点とするチームが、デジタルトランスフォーメーションの旅をガイドします。</span>
-        </p>
-        <div class="seo-keywords mt-3">
-          <span class="badge badge-secondary m-1">
-            <span class="lang-tr">Yazılım Geliştirme</span>
-            <span class="lang-en">Software Development</span>
-            <span class="lang-de">Softwareentwicklung</span>
-            <span class="lang-fr">Développement de logiciels</span>
-            <span class="lang-zh">软件开发</span>
-            <span class="lang-ja">ソフトウェア開発</span>
-          </span>
-          <span class="badge badge-secondary m-1">
-            <span class="lang-tr">Agile Metodolojileri</span>
-            <span class="lang-en">Agile Methodologies</span>
-            <span class="lang-de">Agile Methoden</span>
-            <span class="lang-fr">Méthodologies Agiles</span>
-            <span class="lang-zh">敏捷方法论</span>
-            <span class="lang-ja">アジャイル手法</span>
-          </span>
-          <span class="badge badge-secondary m-1">
-            <span class="lang-tr">Scrum Master</span>
-            <span class="lang-en">Scrum Master</span>
-            <span class="lang-de">Scrum Master</span>
-            <span class="lang-fr">Scrum Master</span>
-            <span class="lang-zh">Scrum 专家</span>
-            <span class="lang-ja">スクラムマスター</span>
-          </span>
-          <span class="badge badge-secondary m-1">
-            <span class="lang-tr">Bilişim Danışmanlığı</span>
-            <span class="lang-en">IT Consultancy</span>
-            <span class="lang-de">IT-Beratung</span>
-            <span class="lang-fr">Conseil IT</span>
-            <span class="lang-zh">IT 咨询</span>
-            <span class="lang-ja">ITコンサルティング</span>
-          </span>
-          <span class="badge badge-secondary m-1">
-            <span class="lang-tr">Dijital Dönüşüm</span>
-            <span class="lang-en">Digital Transformation</span>
-            <span class="lang-de">Digitale Transformation</span>
-            <span class="lang-fr">Transformation Numérique</span>
-            <span class="lang-zh">数字化转型</span>
-            <span class="lang-ja">デジタルトランスフォーメーション</span>
-          </span>
-        </div>
-      </div>
+  <!-- Sayfa boyunca süren hareketli arka plan -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    <div class="streaks"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="floaters">
+      <svg class="fl f1" viewBox="0 0 100 100"><path d="M50 4l40 23v46L50 96 10 73V27z"/></svg>
+      <svg class="fl f2" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="28"/></svg>
+      <svg class="fl f3" viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" rx="6"/><path d="M10 50h80M50 10v80"/></svg>
+      <svg class="fl f4" viewBox="0 0 100 100"><path d="M50 6l44 80H6z"/></svg>
+      <svg class="fl f5" viewBox="0 0 100 100"><path d="M50 4l40 23v46L50 96 10 73V27z"/><path d="M10 27l40 23 40-23M50 50v46"/></svg>
+      <svg class="fl f6" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke-dasharray="4 8"/></svg>
     </div>
+    <div class="noise"></div>
   </div>
-</section>
-    <section id="signup" role="region" aria-label="Bültene Kayıt"  class="contact-section bg-black">
-      <div class="container">
 
-        <div class="row">
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Çevik Çözüm">
+      <span class="brand-mark"><img src="logo/vector/isolated-monochrome-white.svg" alt="" width="30" height="27"></span>
+      <span class="brand-name" data-i18n="brand">Çevik Çözüm</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Ana menü">
+      <a href="#services" data-i18n="nav.services">Hizmetler</a>
+      <a href="#approach" data-i18n="nav.approach">Yaklaşım</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+          <span class="mono" id="lang-current">TR</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <ul class="lang-list" id="lang-list" role="listbox" aria-label="Dil"></ul>
+      </div>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Menü" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">
-                  <span class="lang-tr">Adres</span>
-                  <span class="lang-en">Address</span>
-                  <span class="lang-de">Adresse</span>
-                  <span class="lang-fr">Adresse</span>
-                  <span class="lang-zh">地址</span>
-                  <span class="lang-ja">住所</span>
-                </h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <span class="lang-tr">Sütlüce Beyoğlu/İstanbul</span>
-                  <span class="lang-en">Sutluce Beyoglu/Istanbul</span>
-                  <span class="lang-de">Sutluce Beyoglu/Istanbul</span>
-                  <span class="lang-fr">Sutluce Beyoglu/Istanbul</span>
-                  <span class="lang-zh">Sutluce Beyoglu/Istanbul</span>
-                  <span class="lang-ja">Sutluce Beyoglu/Istanbul</span>
-                </div>
-              </div>
-            </div>
-          </div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="field" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">info@cevikcozum.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">
-                  <span class="lang-tr">Sosyal Medya</span>
-                  <span class="lang-en">Social Media</span>
-                  <span class="lang-de">Soziale Medien</span>
-                  <span class="lang-fr">Réseaux sociaux</span>
-                  <span class="lang-zh">社交媒体</span>
-                  <span class="lang-ja">ソーシャルメディア</span>
-                </h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="https://www.linkedin.com/company/cevikcozum">Linkedin</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hero-inner">
+        <p class="kicker mono"><span class="dot"></span><span data-i18n="hero.kicker" data-scramble>Yazılım · Agile · Dijital Dönüşüm</span></p>
+        <h1 class="hero-title" data-i18n="hero.title">Yazılım ve bilişimde <span class="grad">çevik çözümler</span></h1>
+        <p class="hero-lead" data-i18n="hero.lead">İş süreçlerinizi modernize eden, çevik metodolojilerle verimliliği artıran ve teknolojik dönüşümünüze yön veren dinamik bir çözüm ortağıyız. Danışmanlık, özel yazılım çözümleri ve stratejik eğitimlerle işinizi geleceğe taşımayı hedefliyoruz.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#services"><span data-i18n="hero.cta1">Hizmetleri keşfet</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">İletişime geç</a>
         </div>
-<!-- 
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter Sayfamız</span>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook Sayfamız</span>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub Repomuz</span>
-          </a>
+
+        <aside class="console glass" id="console" hidden aria-live="polite">
+          <div class="console-bar"><i></i><i></i><i></i><span class="mono">cevikcozum.com</span></div>
+          <div class="console-body mono">
+            <div><span class="c-dim">$</span> status <span class="c-dim">--live</span></div>
+            <div><span class="c-ok">●</span> <span data-i18n="console.online">yayında</span></div>
+            <div><span class="c-dim" data-i18n="console.commit">sürüm</span> <span class="c-acc" id="c-commit">—</span></div>
+            <div><span class="c-dim" data-i18n="console.deployed">güncellendi</span> <span id="c-time">—</span></div>
+            <div class="c-msg" id="c-msg"></div>
+          </div>
+        </aside>
+      </div>
+
+      <a class="scroll-cue" href="#services" aria-label="Aşağı kaydır"><span></span></a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="kicker mono" data-i18n="services.kicker">// 01 — Hizmetler</p>
+          <h2 data-i18n="services.title">Çevik Çözüm size ne sunar</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card glass reveal">
+            <div class="card-top"><span class="card-no mono">01</span>
+              <svg class="card-ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="9" fill="none" stroke="url(#g)" stroke-width="2"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8M10 10l6 6M32 32l6 6M38 10l-6 6M16 32l-6 6" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 data-i18n="s1.title">Danışmanlık</h3>
+            <p data-i18n="s1.text">Dijital dönüşüm stratejilerinden teknoloji seçimlerine kadar, yazılım yaşam döngüsünün her aşamasında veriye dayalı ve sonuç odaklı danışmanlık sunuyoruz. Ekiplerinizin teknik kapasitesini artırmak ve projelerinizi başarıya ulaştırmak için yanınızdayız.</p>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card-top"><span class="card-no mono">02</span>
+              <svg class="card-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l18 10v20L24 44 6 34V14z" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/><path d="M6 14l18 10 18-10M24 24v20" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 data-i18n="s2.title">Mimari Danışmanlık</h3>
+            <p data-i18n="s2.text">Yazılım mimarisi süreçlerinde geçici trendlere kapılmak yerine; sürdürülebilir, ölçeklenebilir ve operasyonel maliyetleri en aza indiren stratejik çözümler inşa ediyoruz. İşinize en uygun teknoloji yığınını belirleyerek, geleceğin ihtiyaçlarına bugünden hazır bir altyapı sunuyoruz.</p>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card-top"><span class="card-no mono">03</span>
+              <svg class="card-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18L24 8l20 10-20 10z" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/><path d="M12 22v10c0 3 5 6 12 6s12-3 12-6V22M44 18v12" fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 data-i18n="s3.title">Eğitim</h3>
+            <p data-i18n="s3.text">Yazılım geliştirme süreçleri ve çevik metodolojiler üzerine kapsamlı eğitim çözümleri sunuyoruz.</p>
+            <div class="card-links">
+              <a href="https://www.uzaktanokul.com" target="_blank" rel="noopener" class="mono">uzaktanokul.com ↗</a>
+              <a href="https://www.cocuklaricinbilisim.com" target="_blank" rel="noopener" class="mono">cocuklaricinbilisim.com ↗</a>
+            </div>
+          </article>
         </div>
- -->
+      </div>
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient></defs></svg>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section" id="approach">
+      <div class="wrap approach">
+        <div class="approach-text reveal">
+          <p class="kicker mono" data-i18n="approach.kicker">// 02 — Yaklaşım</p>
+          <h2 data-i18n="approach.title">Agile ve Scrum ile sürdürülebilir hız</h2>
+          <p data-i18n="approach.text">Modern yazılım dünyasında rekabetçi kalmak için <strong>Agile</strong> ve <strong>Scrum</strong> metodolojilerini iş süreçlerimize entegre ediyoruz. Çevik Çözüm olarak, bilişim sektöründeki derin tecrübemizle ekiplerin verimliliğini artıran, sürdürülebilir ve esnek yazılım geliştirme stratejileri sunuyoruz. İstanbul merkezli ekibimizle, dijital dönüşüm yolculuğunuzda size rehberlik ediyoruz.</p>
+        </div>
+
+        <div class="loop reveal" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="loop-svg">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset=".5" stop-color="#0989fb"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+              <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+            </defs>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(140,170,255,.12)" stroke-width="1"/>
+            <circle cx="200" cy="200" r="110" fill="none" stroke="rgba(140,170,255,.08)" stroke-width="1" stroke-dasharray="2 6"/>
+            <circle class="loop-arc" cx="200" cy="200" r="150" fill="none" stroke="url(#lg)" stroke-width="3" stroke-linecap="round" stroke-dasharray="180 763"/>
+            <circle class="loop-arc" cx="200" cy="200" r="150" fill="none" stroke="url(#lg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="180 763" filter="url(#blur)" opacity=".6"/>
+          </svg>
+          <div class="loop-center"><span class="mono" data-i18n="loop.center">SPRINT</span><b>∞</b></div>
+          <span class="loop-node n1 mono" data-i18n="loop.plan">Planla</span>
+          <span class="loop-node n2 mono" data-i18n="loop.build">Geliştir</span>
+          <span class="loop-node n3 mono" data-i18n="loop.review">Gözden geçir</span>
+          <span class="loop-node n4 mono" data-i18n="loop.release">Yayınla</span>
+        </div>
+      </div>
+
+      <div class="marquee" aria-label="Uzmanlık alanları">
+        <div class="marquee-track">
+          <span data-i18n="tag.dev">Yazılım Geliştirme</span><i>✦</i>
+          <span data-i18n="tag.agile">Agile Metodolojileri</span><i>✦</i>
+          <span data-i18n="tag.scrum">Scrum Master</span><i>✦</i>
+          <span data-i18n="tag.it">Bilişim Danışmanlığı</span><i>✦</i>
+          <span data-i18n="tag.dx">Dijital Dönüşüm</span><i>✦</i>
+          <span data-i18n="tag.arch">Yazılım Mimarisi</span><i>✦</i>
+        </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        <span class="lang-tr">Copyright &copy; Çevik Çözüm 2019</span>
-        <span class="lang-en">Copyright &copy; Agile Solution 2019</span>
-        <span class="lang-de">Copyright &copy; Agile Lösung 2019</span>
-        <span class="lang-fr">Copyright &copy; Solution Agile 2019</span>
-        <span class="lang-zh">版权所有 &copy; 敏捷解决方案 2019</span>
-        <span class="lang-ja">Copyright &copy; アジャイルソリューション 2019</span>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact glass reveal">
+          <div class="contact-head">
+            <p class="kicker mono" data-i18n="contact.kicker">// 03 — İletişim</p>
+            <h2 data-i18n="contact.title">Bir sonraki sprintinizi <span class="grad">birlikte planlayalım</span></h2>
+            <a class="btn btn-primary" href="mailto:info@cevikcozum.com"><span data-i18n="contact.cta">E-posta gönderin</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          </div>
+          <dl class="contact-list">
+            <div><dt class="mono" data-i18n="contact.address">Adres</dt><dd data-i18n="contact.addressValue">Sütlüce, Beyoğlu / İstanbul</dd></div>
+            <div><dt class="mono" data-i18n="contact.email">E-posta</dt><dd><a href="mailto:info@cevikcozum.com">info@cevikcozum.com</a></dd></div>
+            <div><dt class="mono" data-i18n="contact.social">Sosyal medya</dt><dd><a href="https://www.linkedin.com/company/cevikcozum" target="_blank" rel="noopener">LinkedIn ↗</a></dd></div>
+          </dl>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2019–<span id="year">2026</span> <span data-i18n="brand">Çevik Çözüm</span></span>
+      <span class="mono footer-build" id="footer-build"></span>
+    </div>
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-  </body>
-
+  <script src="assets/i18n.js?v=2"></script>
+  <script src="assets/site.js?v=2"></script>
+</body>
 </html>

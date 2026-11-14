@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_deploy/
+
+Sitemap: https://cevikcozum.com/sitemap.xml
