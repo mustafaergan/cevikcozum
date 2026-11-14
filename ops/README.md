@@ -15,3 +15,7 @@ git push (master)
 - Sırlar sunucuda, webroot dışında: `~/.deploy/cevikcozum.json` (webhook sırrı + cPanel token'ı). GitHub'da yalnızca webhook sırrı durur.
 - Kayıt: `~/logs/cevikcozum-deploy.log`
 - Yalnızca `.cpanel.yml`'de listelenen dosyalar yayınlanır. Yeni bir klasör eklerseniz oraya da ekleyin.
+
+## Yerelden yayın
+
+`C:\dev\sirketsiteleri` içinden: `npm run cp -- publish cevikcozum -m "mesaj"` (commit + push + canlıyı bekler), `npm run cp -- status` (GitHub ↔ cPanel ↔ canlı).
