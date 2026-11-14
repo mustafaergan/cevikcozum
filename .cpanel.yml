@@ -1,0 +1,9 @@
+---
+# cPanel Git deploy: yalnızca sitenin yayınlanan dosyalarını public_html'e kopyalar.
+# Kaynak dosyalar (scss, gulpfile, package*.json, README...) sunucuda repoda kalır, webe açılmaz.
+# Tetikleyici: GitHub push -> https://cevikcozum.com/_deploy/hook.php (bkz. ops/README.md)
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1969788/public_html/
+    - /bin/cp -R index.html css js img logo vendor _deploy $DEPLOYPATH
+    - /bin/sh ops/write-status.sh $DEPLOYPATH
