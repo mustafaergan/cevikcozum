@@ -1,0 +1,14 @@
+# Yalnızca webhook ve durum dosyası dışarıya açık.
+Options -Indexes
+<IfModule mod_authz_core.c>
+  Require all denied
+  <FilesMatch "^(hook\.php|status\.json)$">
+    Require all granted
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <Files "status.json">
+    Header set Cache-Control "no-store"
+    Header set Access-Control-Allow-Origin "*"
+  </Files>
+</IfModule>
