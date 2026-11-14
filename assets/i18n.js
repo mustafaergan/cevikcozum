@@ -14,7 +14,7 @@ window.I18N = {
       'skip': 'İçeriğe geç',
       'brand': 'Çevik Çözüm',
       'nav.services': 'Hizmetler', 'nav.approach': 'Yaklaşım', 'nav.contact': 'İletişim',
-      'hero.kicker': 'Yazılım · Agile · Dijital Dönüşüm',
+      'hero.kicker': 'Yazılım · <span lang="en">Agile</span> · Dijital Dönüşüm',
       'hero.title': 'Yazılım ve bilişimde <span class="grad">çevik çözümler</span>',
       'hero.lead': 'İş süreçlerinizi modernize eden, çevik metodolojilerle verimliliği artıran ve teknolojik dönüşümünüze yön veren dinamik bir çözüm ortağıyız. Danışmanlık, özel yazılım çözümleri ve stratejik eğitimlerle işinizi geleceğe taşımayı hedefliyoruz.',
       'hero.cta1': 'Hizmetleri keşfet', 'hero.cta2': 'İletişime geç',
