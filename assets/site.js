@@ -123,14 +123,14 @@
   /* ---------- başlık harf karıştırma efekti ---------- */
   function scramble(el) {
     if (reduce || !el) return;
-    var final = el.textContent, chars = '!<>-_\\/[]{}—=+*^?#01', frame = 0, total = 36;
+    var html = el.innerHTML, final = el.textContent, chars = '!<>-_\\/[]{}—=+*^?#01', frame = 0, total = 36;
     (function step() {
       var out = '';
       for (var k = 0; k < final.length; k++) {
         out += (k < (frame / total) * final.length || final[k] === ' ') ? final[k] : chars[Math.floor(Math.random() * chars.length)];
       }
       el.textContent = out;
-      if (++frame <= total) requestAnimationFrame(step); else el.textContent = final;
+      if (++frame <= total) requestAnimationFrame(step); else el.innerHTML = html;
     })();
   }
 
